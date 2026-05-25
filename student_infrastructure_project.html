@@ -124,7 +124,7 @@
   <div class="wrap">
     <section class="hero">
       <div class="eyebrow">Проектное задание</div>
-      <h1>Закупка оборудования, ИТ-инфраструктура и организация рабочего пространства</h1>
+      <h1>Закупка оборудования, ИТ-инфраструктура и organization рабочего пространства</h1>
       <p>Выберите реальную аудиторию, зону института или организацию. Проведите аудит, подтвердите выводы фотографиями, подготовьте смету и соберите собственный проект.</p>
       <div class="nav">
         <a class="btn primary" href="index.html">Главная страница</a>
@@ -137,12 +137,13 @@
       <div class="form-grid">
         <div class="wide">
           <label class="caption" for="projectTitle">Название проекта</label>
-          <input class="field" id="projectTitle" type="text" placeholder="Например: модернизация аудитории 304" />
+          <input class="field" id="projectTitle" type="text" value="Создание зоны для разминки и спорта, для студентов ТИ" placeholder="Создание зоны для разминки и спорта, для студентов ТИ" />
         </div>
         <div>
           <label class="caption" for="objectType">Тип объекта</label>
           <select id="objectType">
             <option value="">Выберите тип</option>
+            <option selected>территория вуза</option>
             <option>Учебная аудитория</option>
             <option>Компьютерный класс</option>
             <option>Серверный узел</option>
@@ -151,11 +152,11 @@
         </div>
         <div>
           <label class="caption" for="roomNumber">Локация</label>
-          <input class="field" id="roomNumber" type="text" placeholder="Корпус Б, ауд. 218" />
+          <input class="field" id="roomNumber" type="text" value="участок улицы возле аудитории 6116" placeholder="участок улицы возле аудитории 6116" />
         </div>
         <div class="wide">
           <label class="caption" for="projectGoal">Цель улучшения</label>
-          <textarea id="projectGoal" placeholder="Сформулируйте измеримую цель..."></textarea>
+          <textarea id="projectGoal" placeholder="Создание зоны с брусьями, турниками, для студентов...">Создание зоны с брусьями, турниками, для студентов, чтобы разминаться после 1,5 часов за компьютером или за партой, поможет улучшить физическое состояние студентов и отвлечёт их от учёбы, для дальнейшей концентрации на процессе обучения</textarea>
         </div>
       </div>
     </section>
@@ -184,7 +185,7 @@
       </div>
       <div style="margin-top:14px;">
         <label class="caption" for="tco">Стоимость владения (TCO)</label>
-        <textarea id="tco" placeholder="Объясните логику затрат и обслуживания..."></textarea>
+        <textarea id="tco" placeholder="Объясните логику затрат и обслуживания...">Первоначальные капитальные вложения (CapEx) включают затраты на приобретение оборудования, доставку, подготовку основания и монтаж конструкций. Операционные расходы (OpEx) минимальны и составляют около 3-5% от стоимости оборудования в год: включают ежесезонную очистку навеса и покрытия, проверку узлов крепления на предмет безопасности (раз в полгода) и обновление лакокрасочного покрытия металлических элементов раз в 2 года.</textarea>
       </div>
     </section>
 
@@ -192,12 +193,12 @@
       <h2>6. Эргономика и инфраструктура</h2>
       <div class="grid">
         <div class="card">
-          <h3>Рабочие места</h3>
-          <textarea id="workplaceErgo" class="small" placeholder="Стол, кресло, свет..."></textarea>
+          <h3>Рабочие места / Спортивные снаряды</h3>
+          <textarea id="workplaceErgo" class="small" placeholder="Стол, кресло, свет...">Высота перекладин рассчитана на средний рост студентов (170-190 см) с возможностью допрыгивания. Параллельные брусья имеют стандартную ширину для безопасного выполнения отжиманий. Наклонная скамья установлена под оптимальным углом для минимизации нагрузки на поясничный отдел. Теневой навес полностью защищает занимающихся от прямых солнечных лучей и осадков.</textarea>
         </div>
         <div class="card">
-          <h3>Сеть и сервер</h3>
-          <textarea id="serverNode" class="small" placeholder="Wi-Fi, розетки, шкаф..."></textarea>
+          <h3>Сеть и инфраструктура</h3>
+          <textarea id="serverNode" class="small" placeholder="Wi-Fi, розетки, шкаф...">В зоне площадки обеспечивается стабильное покрытие беспроводной сети Wi-Fi института для возможности прослушивания обучающих материалов или треков во время разминки. Организована эффективная система водоотведения (водосточные трубы на опорах навеса) для предотвращения скопления влаги на резиновом покрытии. Рядом предусмотрена деревянная стойка для хранения личных вещей и рюкзаков.</textarea>
         </div>
       </div>
     </section>
@@ -224,7 +225,7 @@
 
     <section class="section">
       <h2>10. Итоговые выводы</h2>
-      <textarea id="finalConclusion" placeholder="Финальное резюме проекта..."></textarea>
+      <textarea id="finalConclusion" placeholder="Финальное резюме проекта...">Реализация проекта по модернизации уличного пространства возле аудитории 6116 и созданию современной спортивной воркаут-зоны успешно решает проблему пассивного отдыха студентов ТИ. Переход от асфальтированного пустыря к функциональной площадке с травмобезопасным покрытием и навесом позволяет проводить разминку в любую погоду. Проект экономически обоснован, долговечен и вносит весомый вклад в создание здоровьесберегающей среды университета.</textarea>
       <div class="actions">
         <button class="btn action" id="saveBtn">Сохранить черновик</button>
         <button class="btn light" onclick="window.print()">Печать / PDF</button>
@@ -239,11 +240,43 @@
 const storageKey = 'itInfrastructureDraft';
 
 let state = {
-  team:[{name:'', role:'', conclusion:''}],
-  equipment:[{name:'', price:'', qty:'', reason:''}],
-  photos:[{path:'', caption:''}],
-  visuals:[{path:'', prompt:''}],
-  checklist:{}
+  team:[
+    {
+      name:'Дробот Никита', 
+      role:'Руководитель проекта', 
+      conclusion:'Спина болит, надо построить спорт площадку.'
+    },
+    {
+      name:'Ерошкин Артём', 
+      role:'Технический специалист', 
+      conclusion:'Классное место выбрали, можно прям из аудитории сразу на площадку попасть.'
+    },
+    {
+      name:'Шушков Алексей', 
+      role:'Финансовый контролер', 
+      conclusion:'И не дорого такое внедрить.'
+    }
+  ],
+  equipment:[
+    {name:'Воркаут-комплекс с навесом (турники, брусья, кольца)', price:'145000', qty:'1', reason:'Основной силовой каркас площадки для выполнения базовых упражнений под защитой от осадков.'},
+    {name:'Травмобезопасное резиновое покрытие (плитка 500х500)', price:'1800', qty:'36', reason:'Амортизация при падении, защита суставов, чистота и отсутствие скольжения в сырую погоду.'},
+    {name:'Наклонная скамья для пресса уличная', price:'18500', qty:'1', reason:'Дополнительный элемент для растяжки и укрепления мышц кора после статичной нагрузки.'},
+    {name:'Деревянная стойка-вешалка для рюкзаков и вещей', price:'8500', qty:'1', reason:'Обеспечение порядка на площадке, бережное хранение личных вещей студентов во время тренировки.'},
+    {name:'Монтажные материалы (цемент, крепеж, бетонирование опор)', price:'15000', qty:'1', reason:'Надежная фиксация несущих стоек комплекса в грунте/асфальте для обеспечения безопасности.'}
+  ],
+  photos:[
+    {
+      path:'Выйти с факультета фэма и повернуть налево, пройти чуть вперед и будет площадка спортивная', 
+      caption:'Исходное состояние участка: асфальтовое покрытие с дефектами, нерациональное использование территории.'
+    }
+  ],
+  visuals:[
+    {
+      path:'Выйти с факультета фэма и повернуть налево, пройти чуть вперед и будет площадка спортивная', 
+      caption:'Итоговый результат: современный воркаут-комплекс с синим резиновым покрытием, защитным навесом и скамьей.'
+    }
+  ],
+  checklist:{0:true, 1:true, 2:true, 3:true, 4:true, 5:true}
 };
 
 function byId(id){ return document.getElementById(id); }
@@ -255,8 +288,8 @@ function renderTeam(){
     const div = document.createElement('div');
     div.className = 'dynamic-row';
     div.innerHTML = `
-      <div class="row-head"><strong>Участник ${i+1}</strong> <button class="btn danger" onclick="remove('team', ${i})">Удалить</button></div>
-      <div class="mini-grid">
+      <div class="row-head"><strong>Участник ${i+1}</strong> <button class="btn danger remove-btn" onclick="remove('team', ${i})">Удалить</button></div>
+      <div class="two-grid">
         <input class="field" placeholder="ФИО" value="${m.name}" oninput="state.team[${i}].name=this.value">
         <input class="field" placeholder="Роль" value="${m.role}" oninput="state.team[${i}].role=this.value">
       </div>
@@ -273,11 +306,11 @@ function renderEquipment(){
     const div = document.createElement('div');
     div.className = 'dynamic-row';
     div.innerHTML = `
-      <div class="row-head"><strong>Позиция ${i+1}</strong> <button class="btn danger" onclick="remove('equipment', ${i})">Удалить</button></div>
+      <div class="row-head"><strong>Позиция ${i+1}</strong> <button class="btn danger remove-btn" onclick="remove('equipment', ${i})">Удалить</button></div>
       <div class="mini-grid">
         <input class="field" placeholder="Название" value="${e.name}" oninput="state.equipment[${i}].name=this.value">
-        <input class="field" placeholder="Цена" value="${e.price}" oninput="state.equipment[${i}].price=this.value">
-        <input class="field" placeholder="Кол-во" value="${e.qty}" oninput="state.equipment[${i}].qty=this.value">
+        <input class="field" placeholder="Цена" value="${e.price}" oninput="state.equipment[${i}].price=this.value; updateStats();">
+        <input class="field" placeholder="Кол-во" value="${e.qty}" oninput="state.equipment[${i}].qty=this.value; updateStats();">
       </div>
       <textarea class="small" placeholder="Обоснование" oninput="state.equipment[${i}].reason=this.value">${e.reason}</textarea>
     `;
@@ -292,8 +325,8 @@ function renderPhotos(){
     const div = document.createElement('div');
     div.className = 'media-card';
     div.innerHTML = `
-      <div class="row-head"><strong>Фото аудитории ${i+1}</strong> <button class="btn danger" onclick="remove('photos', ${i})">Удалить</button></div>
-      <div class="media-preview">images/photo_${i+1}.jpg</div>
+      <div class="row-head"><strong>Фото аудитории ${i+1}</strong> <button class="btn danger remove-btn" onclick="remove('photos', ${i})">Удалить</button></div>
+      <div class="media-preview"><img src="https://i.ibb.co/8Q53q6s/image.jpg" alt="До модернизации"></div>
       <input class="field" placeholder="Путь" value="${p.path}" oninput="state.photos[${i}].path=this.value">
       <input class="field" placeholder="Описание" value="${p.caption}" oninput="state.photos[${i}].caption=this.value">
     `;
@@ -308,10 +341,10 @@ function renderVisuals(){
     const div = document.createElement('div');
     div.className = 'media-card';
     div.innerHTML = `
-      <div class="row-head"><strong>Визуализация ${i+1}</strong> <button class="btn danger" onclick="remove('visuals', ${i})">Удалить</button></div>
-      <div class="media-preview">AI Generation</div>
+      <div class="row-head"><strong>Визуализация ${i+1}</strong> <button class="btn danger remove-btn" onclick="remove('visuals', ${i})">Удалить</button></div>
+      <div class="media-preview"><img src="https://i.ibb.co/zw4C3Z2/image.jpg" alt="После модернизации"></div>
       <input class="field" placeholder="Путь к картинке" value="${v.path}" oninput="state.visuals[${i}].path=this.value">
-      <textarea class="small" placeholder="Промпт" oninput="state.visuals[${i}].prompt=this.value">${v.prompt}</textarea>
+      <textarea class="small" placeholder="Описание" oninput="state.visuals[${i}].caption=this.value">${v.caption || ''}</textarea>
     `;
     list.appendChild(div);
   });
@@ -337,6 +370,14 @@ function updateStats(){
   byId('totalCount').innerText = total;
   byId('readyPercent').innerText = perc + '%';
   byId('scoreFill').style.width = perc + '%';
+  
+  if(perc === 100) {
+    byId('readyStatus').innerText = "Готов!";
+    byId('readyStatus').style.color = "var(--green)";
+  } else {
+    byId('readyStatus').innerText = "Заполнение...";
+    byId('readyStatus').style.color = "var(--warn)";
+  }
 }
 
 function remove(key, i){ state[key].splice(i,1); refresh(); }
@@ -345,7 +386,7 @@ function refresh(){ renderTeam(); renderEquipment(); renderPhotos(); renderVisua
 byId('addMemberBtn').onclick = () => { state.team.push({name:'', role:'', conclusion:''}); renderTeam(); };
 byId('addEquipmentBtn').onclick = () => { state.equipment.push({name:'', price:'', qty:'', reason:''}); renderEquipment(); };
 byId('addPhotoBtn').onclick = () => { state.photos.push({path:'', caption:''}); renderPhotos(); };
-byId('addVisualBtn').onclick = () => { state.visuals.push({path:'', prompt:''}); renderVisuals(); };
+byId('addVisualBtn').onclick = () => { state.visuals.push({path:'', caption:''}); renderVisuals(); };
 
 byId('saveBtn').onclick = () => { localStorage.setItem(storageKey, JSON.stringify(state)); alert('Сохранено!'); };
 byId('clearBtn').onclick = () => { if(confirm('Очистить?')){ localStorage.removeItem(storageKey); location.reload(); }};
